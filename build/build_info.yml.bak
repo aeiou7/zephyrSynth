@@ -1,0 +1,5 @@
+west:
+  command: /Users/johnextremesourcreme/git/zephyrSynth/.venv/bin/west build -p -b
+    nucleo_f411re zephyrSynth-skeleton
+  topdir: /Users/johnextremesourcreme/git/zephyrSynth
+  version: 1.3.0

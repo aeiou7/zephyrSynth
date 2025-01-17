@@ -1,0 +1,53 @@
+cmake:
+  application:
+    configuration-dir: /Users/johnextremesourcreme/git/zephyrSynth/zephyrSynth-skeleton
+    source-dir: /Users/johnextremesourcreme/git/zephyrSynth/zephyrSynth-skeleton
+  board:
+    name: nucleo_f411re
+    qualifiers: stm32f411xe
+    revision: 
+  devicetree:
+    bindings-dirs:
+     - /Users/johnextremesourcreme/git/zephyrSynth/zephyr/dts/bindings
+    files:
+     - /Users/johnextremesourcreme/git/zephyrSynth/zephyr/boards/st/nucleo_f411re/nucleo_f411re.dts
+     - /Users/johnextremesourcreme/git/zephyrSynth/zephyrSynth-skeleton/nucleo_f411re.overlay
+    include-dirs:
+     - /Users/johnextremesourcreme/git/zephyrSynth/modules/hal/atmel/include
+     - /Users/johnextremesourcreme/git/zephyrSynth/modules/hal/gigadevice/include
+     - /Users/johnextremesourcreme/git/zephyrSynth/modules/hal/microchip/dts
+     - /Users/johnextremesourcreme/git/zephyrSynth/modules/hal/nuvoton/dts
+     - /Users/johnextremesourcreme/git/zephyrSynth/modules/hal/nxp/dts
+     - /Users/johnextremesourcreme/git/zephyrSynth/modules/hal/stm32/dts
+     - /Users/johnextremesourcreme/git/zephyrSynth/zephyr/include
+     - /Users/johnextremesourcreme/git/zephyrSynth/zephyr/include/zephyr
+     - /Users/johnextremesourcreme/git/zephyrSynth/zephyr/dts/common
+     - /Users/johnextremesourcreme/git/zephyrSynth/zephyr/dts/x86
+     - /Users/johnextremesourcreme/git/zephyrSynth/zephyr/dts/xtensa
+     - /Users/johnextremesourcreme/git/zephyrSynth/zephyr/dts/sparc
+     - /Users/johnextremesourcreme/git/zephyrSynth/zephyr/dts/riscv
+     - /Users/johnextremesourcreme/git/zephyrSynth/zephyr/dts/posix
+     - /Users/johnextremesourcreme/git/zephyrSynth/zephyr/dts/nios2
+     - /Users/johnextremesourcreme/git/zephyrSynth/zephyr/dts/arm64
+     - /Users/johnextremesourcreme/git/zephyrSynth/zephyr/dts/arm
+     - /Users/johnextremesourcreme/git/zephyrSynth/zephyr/dts/arc
+     - /Users/johnextremesourcreme/git/zephyrSynth/zephyr/dts
+    user-files:
+     - /Users/johnextremesourcreme/git/zephyrSynth/zephyrSynth-skeleton/nucleo_f411re.overlay
+  kconfig:
+    files:
+     - /Users/johnextremesourcreme/git/zephyrSynth/zephyr/boards/st/nucleo_f411re/nucleo_f411re_defconfig
+     - /Users/johnextremesourcreme/git/zephyrSynth/zephyrSynth-skeleton/prj.conf
+    user-files:
+     - /Users/johnextremesourcreme/git/zephyrSynth/zephyrSynth-skeleton/prj.conf
+  toolchain:
+    name: zephyr
+    path: /Users/johnextremesourcreme/zephyr-sdk-0.17.0
+  zephyr:
+    version: 4.0.99
+    zephyr-base: /Users/johnextremesourcreme/git/zephyrSynth/zephyr
+version: 0.1.0
+west:
+  command: /Users/johnextremesourcreme/git/zephyrSynth/.venv/bin/west build -p -b nucleo_f411re zephyrSynth-skeleton
+  topdir: /Users/johnextremesourcreme/git/zephyrSynth
+  version: 1.3.0
